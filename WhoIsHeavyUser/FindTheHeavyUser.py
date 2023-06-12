@@ -1,7 +1,7 @@
 import pandas as pd
 
 # csv 파일 읽기
-df = pd.read_csv('def_reservation.csv')
+df = pd.read_csv('df_reservation.csv')
 
 # "dogName"과 "dogSize"를 기준으로 중복 행 찾기
 duplicated_dogs = df.duplicated(subset=['dogName', 'dogSize'], keep=False)
