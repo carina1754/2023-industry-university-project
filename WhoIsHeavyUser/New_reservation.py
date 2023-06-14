@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the DataFrame
-df = pd.read_csv('df_reservation.csv')
+df = pd.read_csv('reservation.csv')
 
 # Create a new column by combining 'dogName' and 'dogSize'
 df['dogIdentity'] = df['dogName'] + df['dogSize']
@@ -29,4 +29,4 @@ df = df[~df['dogName'].isin(top_5_names)]
 print(f"Total number of remaining cases: {len(df)}")
 
 # Write the remaining data to a new csv file
-df.to_csv('filtered_df_reservation.csv', index=False)
+df.to_csv('filtered_reservation.csv', index=False)
